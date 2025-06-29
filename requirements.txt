@@ -1,0 +1,7 @@
+vosk
+sounddevice
+tkinter
+fugashi
+jaconv
+rapidfuzz
+unidic_lite 

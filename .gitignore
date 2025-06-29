@@ -1,0 +1,24 @@
+# Python virtual environment
+venv/
+
+# PyInstaller spec file
+main.spec
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# VSCode settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# PyInstaller build folders
+dist/
+build/
+
+# Log files
+*.log 
