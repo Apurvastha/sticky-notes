@@ -71,9 +71,9 @@ class StickyNotesApp(tk.Tk):
         else:
             dicdir = os.path.join(os.path.dirname(unidic_lite.__file__), "dicdir")
         os.environ["MECABRC"] = ""
-        print("Using MeCab dictionary directory:", dicdir)
-        print("Contents:", os.listdir(dicdir))
-        self.tagger = fugashi.Tagger(f"-d {dicdir}")
+        # print("Using MeCab dictionary directory:", dicdir)
+        # print("Contents:", os.listdir(dicdir))
+        self.tagger = fugashi.Tagger(f'-d "{dicdir}"')
 
         # Check for Vosk model
         if not os.path.exists(MODEL_PATH):
@@ -182,20 +182,20 @@ class StickyNotesApp(tk.Tk):
     # --- Highlighting ---
     def kanji_to_romaji(self, text):
         kana = ''.join([word.feature.kana or word.surface for word in self.tagger(text)])
-        print(f"Kana: {kana}")  # Debug print
+        # print(f"Kana: {kana}")  # Debug print
         kana = kana.replace(' ', '')  # Remove spaces for better conversion
         hira = jaconv.kata2hira(kana)
-        print(f"Hiragana: {hira}")  # Debug print
+        # print(f"Hiragana: {hira}")  # Debug print
         try:
             romaji = jaconv.kana2alphabet(hira)
         except Exception as e:
-            print(f"jaconv error: {e}")
+            # print(f"jaconv error: {e}")
             romaji = hira  # Fallback
-        print(f"Romaji (from kana): {romaji}")  # Debug print
+        # print(f"Romaji (from kana): {romaji}")  # Debug print
         return romaji
 
     def highlight_text(self, spoken, partial=False):
-        print(f"Recognized: {spoken}")
+        # print(f"Recognized: {spoken}")
         self.text.tag_remove("highlight", "1.0", tk.END)
         note = self.text.get("1.0", tk.END)
         if not spoken.strip():
@@ -206,7 +206,7 @@ class StickyNotesApp(tk.Tk):
         match, score, idx = process.extractOne(
             spoken_romaji, note_blocks, scorer=fuzz.partial_ratio
         ) if note_blocks else (None, 0, None)
-        print(f"Fuzzy match score: {score}, matched block: {match}")
+        # print(f"Fuzzy match score: {score}, matched block: {match}")
         if score > 30 and match and idx is not None:
             block_start_idx = note.find(match)
             if block_start_idx == -1:
@@ -243,7 +243,7 @@ class StickyNotesApp(tk.Tk):
                             span_end = idx_in_line + len(window_text)
                             best_window_span = (span_start, span_end)
                             best_window_text = window_text
-            print(f"Best window score: {best_window_score}, window: '{best_window_text}'")
+            # print(f"Best window score: {best_window_score}, window: '{best_window_text}'")
             # Fallback to first 3-4 words if no good window found
             if best_window_span == (0, 0) and block_words:
                 joined = ' '.join(block_words[:4])

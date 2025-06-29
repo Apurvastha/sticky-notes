@@ -1,0 +1,41 @@
+Request:
+Sumimasen, eigo de shitsumon onegai shimasu.
+Sumimasen, eigo de kotaete itadakemasu ka.
+
+Permission:
+Sumimasen, eigo de kotaete mo yoroshii desu ka.
+
+Jikoshoukai onegai shimasu.
+Honjitsu no mensetsu no taisetsu na chansu wo ataete itadaki kansha wo shite imasu.
+
+1. Watashi wa Puradhanangu Degiyani to moushimasu. Anou Degiyani to yonde kudasai.
+2. Ni juukyuu sai desu.
+3. Kazoku wa yonin desu. Ryoushin to otouto to watashi desu.
+4. Shusshin wa Nepaaru no Shisata desu ga, ima wa Kathmandu ni sunde imasu.
+5. Watashi wa Nihon no daigaku wo sotsugyou shimashita.
+6. Watashi no shumi wa hon wo yomu koto to eiga wo miru koto desu.
+7. Nishuu kan mae kara nihongo wo benkyou shite imasu.
+
+Q: Naze Nihon de hatarakitai desu ka?
+A: Nihon de engineer to shite no chansu ga arimasu node ganbatte benkyou shimasu.
+
+Q: Anata no itokoro wo oshiete kudasai.
+A: Watashi no itokoro wa communication to teamwork to teki raketto shimasu koto desu.
+
+Q: Saigo ni nanika shitsumon arimasu ka?
+A: Hai, arimasu. Onsha de saiyou sarete itadakemasu ka?
+
+Q: What are you worried about after coming to Japan?
+A: Nihon no atarashii kankyou ni nareru koto ga shinpai desu.
+
+Q: Have you visited the homepage of our company?
+A: Yes, I have visited the homepage of San Engineering. It has been working on the ICT and first class architect jobs.
+
+Q: Why do you want to work in our company?
+A: Because of the company's reputation in infrastructure and innovative projects. The company focuses on sustainability and high standards, which align with my goals especially in civil engineering.
+
+Q: What is your future plan?
+A: My future plan is to become a professional civil engineer and gain some experience working hand in hand with my teams and other people of Japan. I also want to improve my language skills and communicate fluently and appreciate the beauty of the country. I want to grow out into local and international fields like civil engineering, design, surveying, investigation, and contribute my technical skills to create a brighter future.
+
+Q: What was your final year project about?
+A: My final year project was about extension of proposed road section. The main objective of this project was to conduct topographic map, geometric design, and full cost estimate.
